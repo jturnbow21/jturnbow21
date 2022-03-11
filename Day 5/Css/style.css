@@ -1,0 +1,35 @@
+.header-img {
+    background-image: url(../img/macbook.jpg);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.header-text {
+    background: white;
+    width: 33%;
+    padding: 20px 40px;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+}
+
+.btn {
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    box-shadow: 10px 20px 25px black;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.mr {
+    margin-right: 30px;
+}
