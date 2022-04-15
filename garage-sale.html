@@ -1,62 +1,208 @@
 <html>
     <head>
-        <title></title>
+      <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      
+    <!-- Link to stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tyopgraphy.css">
+
+    <!-- Link to googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Garage Sale</title>
     </head>
     <body>
-        <div>
-            <h3>Broken Dagger</h3>
-            <p>I broke it off into an Owl Bear</p>
-            <p>$420.69</p>
-            <button ig="dagger-add">Add to Cart</button>
+
+    <div class="bg-img background"></div>
+    <!-- Start of header -->
+    <section class="section_header">
+        <div class="container-fluid">
+            <div class="row header-bg align-items-center ">
+                <div class="col text-center">
+                    <h1 class="header-1 ">Belethor's General Goods</h1>
+                    <h2 class="header-2">Everything's for sale, my friend. Everything</h2>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Staff of Freezing</h3>
-            <p>I broke it off into an Owl Bear</p>
-            <p>$420.69</p>
-            <button id="staff-add">Add to Cart</button>
+    </section>
+    <!-- End of header -->
+
+<!-- Start of item cards -->
+    <section class="section_projects p-5" id="projects">
+        <div class="container sale border border-dark">
+            <h2 class="header-3 text-center mb-5 pt-3">In Stock</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center pt-5 pb-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="project-img-container">
+                            <img src="img/broken-dagger.jpg" class="card-img-top project-img" alt="drone">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title header-4">Broken Dagger</h5>
+                            <p class="card-text paragraph-3">The rest of it is in an Owl Bear, so the story goes.</p>
+                            <p>$55.00</p>
+                            <button class="btn btn-outline-secondary btn-" id="dagger-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-6 d-flex justify-content-center pt-5 pb-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="project-img-container">
+                            <img src="img/old-katana.jpg" class="card-img-top project-img" alt="drone">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title header-4">Blessed Katana</h5>
+                            <p class="card-text paragraph-3">If you buy this you'll have the power of god and anime on your side!</p>
+                            <p>$420.69</p>
+                            <button class="btn btn-outline-secondary btn-" id="katana-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto d-flex justify-content-center pt-5 pb-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="project-img-container">
+                            <img src="img/nice-rope.jpg" class="card-img-top project-img" alt="drone">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title header-4">Rope</h5>
+                            <p class="card-text paragraph-3">Hey that's some pretty nice rope!</p>
+                            <p>$45.00</p>
+                            <button class="btn btn-outline-secondary btn-" id="rope-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto d-flex justify-content-center pt-5 pb-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="project-img-container">
+                            <img src="img/mana-potion.JPG" class="card-img-top project-img" alt="drone">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title header-4">Mana Potion</h5>
+                            <p class="card-text paragraph-3">Can't sling spells without it!</p>
+                            <p>$37.73</p>
+                            <button class="btn btn-outline-secondary btn-" id="mana-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto d-flex justify-content-center pt-5 pb-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="project-img-container">
+                            <img src="img/ring.jpg" class="card-img-top project-img" alt="drone">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title header-4">Old Ring</h5>
+                            <p class="card-text paragraph-3">I heard it belonged to Gimli son of Gloin.</p>
+                            <p>$1993.00</p>
+                            <button class="btn btn-outline-secondary btn-" id="ring-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto d-flex justify-content-center pt-5 pb-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="project-img-container">
+                            <img src="img/health-potion.jpg" class="card-img-top project-img" alt="drone">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title header-4">Health Potion</h5>
+                            <p class="card-text paragraph-3">Those dungeons can be brutal!</p>
+                            <p>$73.37</p>
+                            <button class="btn btn-outline-secondary btn-" id="health-add">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto pb-4">
+                <button id="checkout" class="btn btn-dark" type="button" id="checkout">Checkout</button>
+              </div>
+              <h1 class="header-4 text-center">Your shopping cart total is: $<span id="cartTotal" ></span></h1>
         </div>
-        <div>
-            <h3>Rope</h3>
-            <p>I broke it off into an Owl Bear</p>
-            <p>$420.69</p>
-            <button id="rope-add">Add to Cart</button>
-        </div>
-        <div>
-            <button id="checkout">Checkout</button>
+<!-- End of Item Cards -->
+    </section>
+
+
         </div>
         <script>
             const shoppingCart = []
-            const ropeAddButton = document.getElementById("rope-add")
             const daggerAddButton = document.getElementById("dagger-add")
+            const katanaAddButton = document.getElementById("katana-add")
+            const ropeAddButton = document.getElementById("rope-add")
+            const manaAddButton = document.getElementById("mana-add")
+            const ringAddButton = document.getElementById("ring-add")
+            const healthAddButton = document.getElementById("health-add")
+
             const checkoutButton = document.getElementById("checkout")
 
 
 
             function RopeClick() {
                 console.log("Clicked Rope")
-                shoppingCart.push([45, "rope-add", "Rope"])
+                shoppingCart.push([45.00, "rope-add", "Rope"])
 
             }
             ropeAddButton.addEventListener("click", RopeClick)
 
             function DaggerClick() {
                 console.log("Clicked Dagger")
-                shoppingCart.push([55, "dagger-add", "Dagger"])
+                shoppingCart.push([55.00, "dagger-add", "Dagger"])
 
             }
- 
+          
+            daggerAddButton.addEventListener("click", DaggerClick) 
+            
+          function KatanaClick() {
+                console.log("Clicked Katana")
+                shoppingCart.push([420.69, "katana-add", "Katana"])
+
+            }
+            katanaAddButton.addEventListener("click", KatanaClick)
+
+            function ManaClick() {
+                console.log("Clicked Mana")
+                shoppingCart.push([37.73, "mana-add", "Mana"])
+
+            }
+            manaAddButton.addEventListener("click", ManaClick)
+
+            function RingClick() {
+                console.log("Clicked Ring")
+                shoppingCart.push([1993.00, "ring-add", "Ring"])
+
+            }
+            ringAddButton.addEventListener("click", RingClick)
+
+            function HealthClick() {
+                console.log("Clicked Health")
+                shoppingCart.push([73.37, "health-add", "Health"])
+
+            }
+            healthAddButton.addEventListener("click", HealthClick)
 
             function checkoutClick() {
             console.log("checkout clicked")
             console.log(shoppingCart)
             console.log(shoppingCart[0][0] + shoppingCart[1][0])
             const totalCartPrice = shoppingCart.reduce((total, current) => total + current[0], 0)
+            document.getElementById("cartTotal").innerHTML = totalCartPrice;
 
             console.log(totalCartPrice);
         }
 
         checkoutButton.addEventListener('click', checkoutClick)
-        daggerAddButton.addEventListener("click", DaggerClick) 
+
+        daggerAddButton.onclick = function(){
+    
+        daggerAddButton.innerHTML = "Remove from Cart";
+        
+    
+}
 
         </script>
     </body>

@@ -1,54 +1,51 @@
-.header-img {
-    background-image: url(../img/macbook.jpg);
+/* Header Section */
+.header-bg {
+    background-image: url(/img/equipment.jpg);
     height: 75vh;
     background-size: cover;
     background-position: center;
-    position: relative;
-
 }
 
-.header-text {
-    background: white;
-    width: 33%;
-    padding: 20px 40px;
-    position: absolute;
-    top: 50%;
-    right: 7%;
-    transform: translateY(-50%);
-    border-radius: 15px;
+/* About Section */
+
+.background {
+    background-image: url(/img/merchant-header.jpg);
+    max-height: 100vh;
 }
 
-.btn {
-    border-radius: 15px;
-    background-color: black;
-    color: white;
-    padding: 5px 15px;
-    box-shadow: 10px 20px 25px black;
+/* Skills Section */
+.sale {
+    background-color: #88808F;
 }
 
-.mb {
-    margin-bottom: 30px;
+/* Projects Section */
+.project-img {
+    height: 500px;
+    
 }
 
-.mr {
-    margin-right: 30px;
+.project-img:hover {
+    transform: scale(1.2);
+    transition: ease-in-out;
+    transition-duration: 1.2s;
 }
 
-.btn:hover {
-    background-color: navy;
+.project-img-container {
+    overflow: hidden;
 }
 
-.container{
-    height: 60px;
-    width: 100%;
+/* Contact Section */
+.section_contact {
+    background-color: var(--light-blue);
 }
 
-.green {
-    background-color: green;
+/* Buttons Section */
+.btn-green {
+    color: #79A988;
+    border: solid;
 }
 
-@media (max-width: 1200px) {
-    .green {
-        background-color: red;
-    }
+.btn-green:hover {
+    background-color: var(--olive-green);
+    border: solid var(--olive-green);
 }

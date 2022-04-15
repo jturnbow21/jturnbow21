@@ -1,0 +1,51 @@
+/* Headers */
+.header-1 {
+    font-family: 'Vast Shadow', cursive;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    position: relative;
+
+
+}
+
+.header-2 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-3 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-4 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+/* Paragraphs/Subheadings */
+.paragraph-1 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.paragraph-2 {
+    font-family: var(--paragraph-font);
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.paragraph-3 {
+
+    font-size: 1.1rem;
+    font-weight: 200;
+}
