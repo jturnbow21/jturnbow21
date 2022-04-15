@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <h3>Broken Dagger</h3>
+            <p>I broke it off into an Owl Bear</p>
+            <p>$420.69</p>
+            <button ig="dagger-add">Add to Cart</button>
+        </div>
+        <div>
+            <h3>Staff of Freezing</h3>
+            <p>I broke it off into an Owl Bear</p>
+            <p>$420.69</p>
+            <button id="staff-add">Add to Cart</button>
+        </div>
+        <div>
+            <h3>Rope</h3>
+            <p>I broke it off into an Owl Bear</p>
+            <p>$420.69</p>
+            <button id="rope-add">Add to Cart</button>
+        </div>
+        <div>
+            <button id="checkout">Checkout</button>
+        </div>
+        <script>
+            const shoppingCart = []
+            const ropeAddButton = document.getElementById("rope-add")
+            const daggerAddButton = document.getElementById("dagger-add")
+            const checkoutButton = document.getElementById("checkout")
+
+
+
+            function RopeClick() {
+                console.log("Clicked Rope")
+                shoppingCart.push([45, "rope-add", "Rope"])
+
+            }
+            ropeAddButton.addEventListener("click", RopeClick)
+
+            function DaggerClick() {
+                console.log("Clicked Dagger")
+                shoppingCart.push([55, "dagger-add", "Dagger"])
+
+            }
+ 
+
+            function checkoutClick() {
+            console.log("checkout clicked")
+            console.log(shoppingCart)
+            console.log(shoppingCart[0][0] + shoppingCart[1][0])
+            const totalCartPrice = shoppingCart.reduce((total, current) => total + current[0], 0)
+
+            console.log(totalCartPrice);
+        }
+
+        checkoutButton.addEventListener('click', checkoutClick)
+        daggerAddButton.addEventListener("click", DaggerClick) 
+
+        </script>
+    </body>
+</html>
