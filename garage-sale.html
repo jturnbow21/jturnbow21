@@ -27,8 +27,8 @@
         <div class="container-fluid">
             <div class="row header-bg align-items-center ">
                 <div class="col text-center">
-                    <h1 class="header-1 ">Belethor's General Goods</h1>
-                    <h2 class="header-2">Everything's for sale, my friend. Everything</h2>
+                    <h1 class="header-1 ">Garage Sale</h1>
+                    <h2 class="header-2">I have a weird garage man!</h2>
                 </div>
             </div>
         </div>
@@ -130,6 +130,7 @@
 
         </div>
         <script>
+// Variables
             const shoppingCart = []
             const daggerAddButton = document.getElementById("dagger-add")
             const katanaAddButton = document.getElementById("katana-add")
@@ -137,72 +138,141 @@
             const manaAddButton = document.getElementById("mana-add")
             const ringAddButton = document.getElementById("ring-add")
             const healthAddButton = document.getElementById("health-add")
+            const totalCartPrice = shoppingCart.reduce((total, current) => total + current[0], 0)
 
             const checkoutButton = document.getElementById("checkout")
+            var count = 1;
+            var cartIsEmpty = true;
+            var timesClickedD = 0;
+            var timesClickedK = 0;
+            var timesClickedM = 0;
+            var timesClickedR = 0;
+            var timesClickedH = 0;
+            var timesClickedRo = 0;
 
 
 
-            function RopeClick() {
-                console.log("Clicked Rope")
-                shoppingCart.push([45.00, "rope-add", "Rope"])
-
-            }
-            ropeAddButton.addEventListener("click", RopeClick)
-
+// Dagger Function
             function DaggerClick() {
                 console.log("Clicked Dagger")
                 shoppingCart.push([55.00, "dagger-add", "Dagger"])
+                daggerAddButton.innerHTML = "Remove from Cart";
+                timesClickedD++;
 
-            }
+                if (timesClickedD%2==0) {
+                daggerAddButton.innerHTML = "Add to Cart";
+                var numbers = [55];
+                const subtract = (shoppingCart, number) =>  accumulator - number;
+                 shoppingCart.reduce(
+                (previousValue, currentValue) => currentValue - currentValue);
+                 console.log(shoppingCart) 
+                } }
           
             daggerAddButton.addEventListener("click", DaggerClick) 
-            
-          function KatanaClick() {
+
+// Katana Function
+            function KatanaClick() {
                 console.log("Clicked Katana")
                 shoppingCart.push([420.69, "katana-add", "Katana"])
+                katanaAddButton.innerHTML = "Remove from Cart";
+                timesClickedK++;
 
-            }
+                if (timesClickedK%2==0) {
+                katanaAddButton.innerHTML = "Add to Cart";
+                var numbers = [55];
+                const subtract = (shoppingCart, number) =>  accumulator - number;
+                                shoppingCart.reduce(
+                (previousValue, currentValue) => currentValue - currentValue);
+                } }
             katanaAddButton.addEventListener("click", KatanaClick)
 
+// Rope Function
+            function RopeClick() {
+                console.log("Clicked Rope")
+                shoppingCart.push([420.69, "rope-add", "Rope"])
+                ropeAddButton.innerHTML = "Remove from Cart";
+                timesClickedRo++;
+
+                if (timesClickedRo%2==0) {
+                ropeAddButton.innerHTML = "Add to Cart";
+                var numbers = [45];
+                const subtract = (shoppingCart, number) =>  accumulator - number;
+                                shoppingCart.reduce(
+                (previousValue, currentValue) => currentValue - currentValue);
+                } }
+            
+                ropeAddButton.addEventListener("click", RopeClick)
+
+// Mana Function
             function ManaClick() {
                 console.log("Clicked Mana")
                 shoppingCart.push([37.73, "mana-add", "Mana"])
+                manaAddButton.innerHTML = "Remove from Cart";
+                timesClickedM++;
 
-            }
+                if (timesClickedM%2==0) {
+                manaAddButton.innerHTML = "Add to Cart";
+                var numbers = [37.73];
+                const subtract = (shoppingCart, number) =>  accumulator - number;
+                                shoppingCart.reduce(
+                (previousValue, currentValue) => currentValue - currentValue);
+                } }
             manaAddButton.addEventListener("click", ManaClick)
 
+ //    Ring Function
             function RingClick() {
                 console.log("Clicked Ring")
                 shoppingCart.push([1993.00, "ring-add", "Ring"])
+                ringAddButton.innerHTML = "Remove from Cart";
+                timesClickedR++;
 
-            }
+                if (timesClickedR%2==0) {
+                ringAddButton.innerHTML = "Add to Cart";
+                var numbers = [1993.00];
+                const subtract = (shoppingCart, number) =>  accumulator - number;
+                                shoppingCart.reduce(
+                (previousValue, currentValue) => currentValue - currentValue);
+                } }
             ringAddButton.addEventListener("click", RingClick)
 
+// Health Function
             function HealthClick() {
                 console.log("Clicked Health")
-                shoppingCart.push([73.37, "health-add", "Health"])
+                shoppingCart.push([1993.00, "health-add", "Health"])
+                healthAddButton.innerHTML = "Remove from Cart";
+                timesClickedH++;
 
-            }
+                if (timesClickedH%2==0) {
+                healthAddButton.innerHTML = "Add to Cart";
+                var numbers = [73.37];
+                const subtract = (shoppingCart, number) =>  accumulator - number;
+                                shoppingCart.reduce(
+                (previousValue, currentValue) => currentValue - currentValue);
+                } }
+
             healthAddButton.addEventListener("click", HealthClick)
 
+// Checkout Function 
             function checkoutClick() {
             console.log("checkout clicked")
             console.log(shoppingCart)
-            console.log(shoppingCart[0][0] + shoppingCart[1][0])
-            const totalCartPrice = shoppingCart.reduce((total, current) => total + current[0], 0)
+            console.log(shoppingCart[0][0] + shoppingCart[0][0])
+            var totalCartPrice = shoppingCart.reduce((total, current) => total + current[0], 0)
             document.getElementById("cartTotal").innerHTML = totalCartPrice;
 
             console.log(totalCartPrice);
         }
 
         checkoutButton.addEventListener('click', checkoutClick)
-
-        daggerAddButton.onclick = function(){
-    
-        daggerAddButton.innerHTML = "Remove from Cart";
         
-    
-}
+
+   
+
+
+
+
+
+
 
         </script>
     </body>

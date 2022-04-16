@@ -6,19 +6,13 @@
     background-position: center;
 }
 
-/* About Section */
+/* Shop Section */
 
-.background {
-    background-image: url(/img/merchant-header.jpg);
-    max-height: 100vh;
-}
-
-/* Skills Section */
 .sale {
     background-color: #88808F;
 }
 
-/* Projects Section */
+/* Items Section */
 .project-img {
     height: 500px;
     
@@ -34,18 +28,3 @@
     overflow: hidden;
 }
 
-/* Contact Section */
-.section_contact {
-    background-color: var(--light-blue);
-}
-
-/* Buttons Section */
-.btn-green {
-    color: #79A988;
-    border: solid;
-}
-
-.btn-green:hover {
-    background-color: var(--olive-green);
-    border: solid var(--olive-green);
-}
